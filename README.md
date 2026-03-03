@@ -1,0 +1,14 @@
+# Tutorial de instalação do klipper na ender 3 s1
+- Baixe a imagem e instale o boot utilizando o programa de preferencia Raspberry ou balena etcher.
+- Na raiz da imagem instalada configure a rede pelo system.cfg.
+- Utilize a comunicação SSH no BTT pi (biqu biqu).
+- Em seguida digite:
+- cd klipper
+- make menuconfig
+- habilite a primeira escolha
+- selecione stm32 e stm32f401
+- No bootloader 64kib
+- E troque USB para serial
+- Depois salve, e faça o comando make
+- copie o arquivo gerado na pasta out/klipper.bin para a pasta STM32F4_UPDATE na raiz do cartão sd da impressora (FAT32).
+- Instale a firmware na impressoara.
